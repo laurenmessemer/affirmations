@@ -18,7 +18,6 @@ def upload_to_s3(file_path, bucket, key):
         Bucket=bucket,
         Key=key,
         ExtraArgs={
-            "ACL": "public-read",
             "ContentType": "audio/mpeg"
         }
     )
